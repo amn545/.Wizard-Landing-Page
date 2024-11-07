@@ -1,0 +1,383 @@
+@font-face {
+     font-family: Neue;
+     src: url(./Fonts/PPNeueMachina_\ Light.ttf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Fonts/Gilroy-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    /* cursor: none;       */
+}
+
+html, body{
+    scrollbar-width: none;
+    width: 100%;
+    height: 100%;  
+    background-color: #fff;     
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#cursor{
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    background-color: #B7FF6A;
+    z-index: 1;
+    border: 0.1px solid #B7FF6A; 
+    border-radius: 50%;         
+    position: fixed;
+    /* box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.363);  */
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    color: #000;
+}
+
+#nav h2{
+    font-size: 30px;
+    letter-spacing: 0.1px;
+    color: #000;
+    font-family: Neue;
+}
+
+h2 span{
+    display: inline-block;
+}
+
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Gilroy;
+    gap: 3vw;
+}
+
+.part2 h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.part2 h4:hover{
+    color: #B7FF6A;
+    text-decoration: underline;
+}
+
+.part2 button{
+    padding: 15px 25px;
+    font-family: Neue;
+    border-radius: 10px;
+    border: 2px solid #B7FF6A;
+    color: #000;
+    cursor: pointer;
+    background-color: #B7FF6A;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+#center{
+    padding: 30px 50px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.centerpart-1{
+    width: 50%;
+    height: 100%;
+}
+
+.centerpart-1 h1{
+    font-size: 3.5vw;
+    font-family: Neue;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+.centerpart-1 p {
+    font-size: 1.3vw;
+    width: 75%;
+    font-family: Gilroy;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+.centerpart-1 button{
+    background-color: #fff;
+    padding: 20px 30px;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    background-color: #B7FF6A;
+    color: #000;
+    border: 2px solid #B7FF6A;
+    font-family: Neue;
+}
+
+.centerpart-1 button:hover{
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+
+.centerpart-1 .span1{
+    color: #B7FF6A;
+}
+
+.centerpart-2{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerpart-2 img{
+    position: absolute;
+    height: 100%;
+}
+
+.section1bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 50px;    
+}
+
+.section1bottom img{
+    height: 40px;
+}
+
+.section1bottom .img1{
+    height: 140px;
+}
+
+.section1bottom .img2 {
+    height: 40px;
+}
+
+.section2 .services{
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+
+.services h3{
+    background-color: #B7FF6A;
+    padding: 5px 10px;
+    font-family: Neue;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 2.5vw;
+}
+
+.services p{
+    font-size: 1.4vw;
+    font-weight: 500;
+    font-family: Gilroy;
+    color: #000;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.2vw;
+    flex-wrap: wrap;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 18vw;
+    border: 2px solid #000;
+    border-radius: 30px;
+    width: 48%;
+    padding: 40px;
+    box-shadow: 0px 10px 0px #000;
+    display: flex;
+}
+
+.elempart-1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.elempart-1 h2{
+    font-size: 2vw;
+    background-color: #B7FF6A;
+    font-weight: 500;
+    padding: 0px 5px;
+    border-radius: 10px;
+    font-family: Neue;
+}
+
+.elempart-1 h4 {
+    display: flex;
+    align-items: center;
+    font-size: 1.7vw;
+    font-family: Neue;
+    font-weight: 500;
+    gap: 1vw;
+}
+
+.elempart-1 h4 i{
+    padding: 5px;
+    background-color: #000;
+    color: #B7FF6A;
+    border-radius: 50%;
+    gap: 1vw;
+}
+
+.elempart-2{
+    height: 100%;
+    width: 50%;
+}
+
+.elempart-2 img{
+    height: 100%;
+}
+
+.black{
+    background-color: black;
+    color: #fff;
+}
+
+.black h2{
+    color: #000;
+    background-color: #fff;
+}
+
+.black h4 i{
+    background-color: #fff;
+    color: #000;
+}
+
+.happen{
+    width: 92%;
+    height: 40%;
+    overflow: hidden;
+    margin: 5% 4%;
+    border-radius: 20px;
+    background-color: #F3F3F3;
+    display: flex;
+}
+
+.happenpart-1{
+    padding: 40px 50px;
+    width: 45%;
+    height: 100%;
+}
+
+.happenpart-1 h2{
+    font-size: 2.5vw;
+    letter-spacing: 1;
+    margin-bottom: 1.5vw;
+    font-family: Neue;
+    font-weight: 500;
+}
+
+.happenpart-1 p{
+    font-size: 1.3vw;
+    font-family: Gilroy;
+    font-weight: 500;
+    margin-bottom: 1.5vw;
+}
+
+.happenpart-1 button{
+    padding: 15px 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.4vw;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.happenpart-1 button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.happenpart-2 {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.happenpart-2 img{
+    height: 100%;
+}
+
+.footer{
+    width: 92%;
+    height: 40%;
+    margin: 5% 4%;
+    border-radius: 20px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.col{
+    width: 30%;
+    height: 80%;
+    background-color: #000;
+    border-right: 2px solid #fff;
+    padding: 20px 30px;
+}
+
+
+.col p{
+    font-size: 1.4vw;
+    font-family: Gilroy;
+    font-weight: 500;
+    color: #fff;
+}
+
+.col h3{
+    font-size: 1.7vw;
+    font-family: Neue;
+    color: #B7FF6A;
+    padding-top: 5%;
+}
+
+
+.white{
+    border: none;
+}
